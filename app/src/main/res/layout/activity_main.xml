@@ -31,8 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintVertical_bias="0.179"
+        android:textColor="@color/colorPrimaryDark"
         android:visibility="gone">
-
     </TextView>
 
 

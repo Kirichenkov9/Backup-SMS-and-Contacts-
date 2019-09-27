@@ -20,7 +20,6 @@ import java.io.FileOutputStream
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
-import kotlin.collections.HashSet
 
 class MainActivity : AppCompatActivity() {
     private val PERMISSION = 0
@@ -87,7 +86,7 @@ class MainActivity : AppCompatActivity() {
         return
     }
 
-    private fun getContacts(): HashMap<String?,ContactModel> {
+    private fun getContacts(): HashMap<String?, ContactModel> {
         val list = HashMap<String?, ContactModel>()
 
         val contentResolver = contentResolver
@@ -155,7 +154,7 @@ class MainActivity : AppCompatActivity() {
         var path: String? = null
 
         val root = Environment.getExternalStorageDirectory().absolutePath
-        val file = File( "$root/backup/backup.txt")
+        val file = File("$root/backup/backup.txt")
 
         if (file.exists()) file.delete()
 
